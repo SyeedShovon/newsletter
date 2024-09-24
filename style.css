@@ -30,3 +30,68 @@ body{
     letter-spacing: 0.1rem;
 }
 
+#newsletter{
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 80px 50px 50px;
+    z-index: 1000;
+    transition: 0.5s;
+    position: fixed;
+    width: 450px;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     visibility: hidden;
+}
+
+#newsletter.active{
+    visibility: visible;
+    top: 50%;
+}
+
+#newsletter h2{
+    font-size: 24px;
+    text-align: center;
+    color: chocolate;
+    padding: 20px 10px;
+}
+
+#newsletter p{
+    text-align: center;
+    color: chocolate;
+}
+
+#newsletter .box{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+input, button{
+    width: 100%;
+    font-size: 1rem;
+    font-family: serif;
+    padding: 15px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+button{
+    width: 150px;
+    color: #fff;
+    background-color: midnightblue;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    border: none;
+}
+
+.close{
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right:20px;
+}
